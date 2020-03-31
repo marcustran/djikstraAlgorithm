@@ -12,10 +12,9 @@ public class Main {
     }
 
     public void printGraph(int dist[], int x){
-        System.out.println("Distance from source to destination is ");
+        System.out.println("Distance from A to destination");
         for (int i = 0; i<6; i++){
-            System.out.println((char)i);
-            System.out.println(i + "----------" + dist[i]);
+            System.out.println((char)(i+65) + "=" + dist[i]);
         }
     }
     public void dijsktra(int graph[][], int src){
